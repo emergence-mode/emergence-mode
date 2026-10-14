@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Émergence Mode - Marketplace de Mode</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background-image: url('https://via.placeholder.com/1920x600?text=Émergence+Mode');
+            color: white;
+            text-align: center;
+            padding: 200px 0;
+            background-size: cover;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            transition: transform 0.2s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ff7f50;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                padding: 100px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand logo" href="#">Émergence Mode</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#femme">Femme</a></li>
+                <li class="nav-item"><a class="nav-link" href="#homme">Homme</a></li>
+                <li class="nav-item"><a class="nav-link" href="#enfant">Enfant</a></li>
+                <li class="nav-item"><a class="nav-link" href="#espace-vendeur">Espace Vendeur</a></li>
+            </ul>
+            <form class="form-inline ml-auto">
+                <input class="form-control mr-2" type="search" placeholder="Recherche" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Rechercher</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Bienvenue dans Émergence Mode</h1>
+        <p>Découvrez des marques émergentes et leurs dernières tendances.</p>
+    </div>
+
+    <div class="container mt-4">
+        <h2 id="femme">Catégorie Femme</h2>
+        <div class="row">
+            <div class="col-md-4 product">
+                <img src="https://via.placeholder.com/300x400?text=Robe+Femme" alt="Robe Femme" class="img-fluid">
+                <h3>Robe Maxi</h3>
+                <p>Prix : 79,99 €</p>
+                <button class="btn btn-primary add-to-cart">Ajouter au panier</button>
+            </div>
+            <div class="col-md-4 product">
+                <img src="https://via.placeholder.com/300x400?text=Blouse+Femme" alt="Blouse Femme" class="img-fluid">
+                <h3>Blouse Chic</h3>
+                <p>Prix : 49,99 €</p>
+                <button class="btn btn-primary add-to-cart">Ajouter au panier</button>
+            </div>
+            <div class="col-md-4 product">
+                <img src="https://via.placeholder.com/300x400?text=Pantalon+Femme" alt="Pantalon Femme" class="img-fluid">
+                <h3>Pantalon Tailleur</h3>
+                <p>Prix : 59,99 €</p>
+                <button class="btn btn-primary add-to-cart">Ajouter au panier</button>
+            </div>
+        </div>
+
+        <h2 id="homme">Catégorie Homme</h2>
+        <div class="row">
+            <div class="col-md-4 product">
+                <img src="https://via.placeholder.com/300x400?text=Chemise+Homme" alt="Chemise Homme" class="img-fluid">
+                <h3>Chemise Classique</h3>
+                <p>Prix : 39,99 €</p>
+                <button class="btn btn-primary add-to-cart">Ajouter au panier</button>
+            </div>
+            <div class="col-md-4 product">
+                <img src="https://via.placeholder.com/300x400?text=Jean+Homme" alt="Jean Homme" class="img-fluid">
+                <h3>Jean Détendu</h3>
+                <p>Prix : 49,99 €</p>
+                <button class="btn btn-primary add-to-cart">Ajouter au panier</button>
+            </div>
+            <div class="col-md-4 product">
+                <img src="https://via.placeholder.com/300x400?text=Veste+Homme" alt="Veste Homme" class="img-fluid">
+                <h3>Veste de Cuir</h3>
+                <p>Prix : 99,99 €</p>
+                <button class="btn btn-primary add-to-cart">Ajouter au panier</button>
+            </div>
+        </div>
+
+        <h2 id="enfant">Catégorie Enfant</h2>
+        <div class="row">
+            <div class="col-md-4 product">
+                <img src="https://via.placeholder.com/300x400?text=Robe+Enfant" alt="Robe Enfant" class="img-fluid">
+                <h3>Robe Fille</h3>
+                <p>Prix : 29,99 €</p>
+                <button class="btn btn-primary add-to-cart">Ajouter au panier</button>
+            </div>
+            <div class="col-md-4 product">
+                <img src="https://via.placeholder.com/300x400?text=T-Shirt+Enfant" alt="T-Shirt Enfant" class="img-fluid">
+                <h3>T-Shirt Garçon</h3>
+                <p>Prix : 19,99 €</p>
+                <button class="btn btn-primary add-to-cart">Ajouter au panier</button>
+            </div>
+            <div class="col-md-4 product">
+                <img src="https://via.placeholder.com/300x400?text=Short+Enfant" alt="Short Enfant" class="img-fluid">
+                <h3>Short d'Été</h3>
+                <p>Prix : 24,99 €</p>
+                <button class="btn btn-primary add-to-cart">Ajouter au panier</button>
+            </div>
+        </div>
+
+        <h2 id="panier" class="mt-5">Panier</h2>
+        <div id="cart" class="mb-4"><em>Aucun produit dans le panier.</em></div>
+        <button class="btn btn-success" onclick="alert('Votre panier a été validé !')">Valider le panier</button>
+
+        <h2 id="espace-vendeur" class="mt-5">Espace Vendeur</h2>
+        <form id="seller-form">
+            <h3>Inscription Vendeur</h3>
+            <div class="form-group">
+                <label for="seller-name">Nom de la marque</label>
+                <input type="text" id="seller-name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="seller-email">Email</label>
+                <input type="email" id="seller-email" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">S'inscrire</button>
+        </form>
+
+        <h3 class="mt-4">Ajouter un Produit</h3>
+        <form id="product-form">
+            <div class="form-group">
+                <label for="product-name">Nom du produit</label>
+                <input type="text" id="product-name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="product-price">Prix</label>
+                <input type="number" id="product-price" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="product-image">URL de l'image</label>
+                <input type="text" id="product-image" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Ajouter Produit</button>
+        </form>
+    </div>
+
+    <script>
+        const cart = [];
+        const addButtons = document.querySelectorAll('.add-to-cart');
+
+        addButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const productName = button.parentElement.querySelector('h3').innerText;
+                const productPrice = button.parentElement.querySelector('p').innerText;
+                const formattedPrice = productPrice.split(' ')[1]; // Récupère juste le prix du texte
+                cart.push({ name: productName, price: formattedPrice });
+
+                updateCart();
+            });
+        });
+
+        function updateCart() {
+            const cartDiv = document.getElementById('cart');
+            cartDiv.innerHTML = '';
+            let total = 0;
+
+            if (cart.length === 0) {
+                cartDiv.innerHTML = '<em>Aucun produit dans le panier.</em>';
+            } else {
+                cart.forEach(item => {
+                    cartDiv.innerHTML += `<div>${item.name} - ${item.price} €</div>`;
+                    total += parseFloat(item.price);
+                });
+                cartDiv.innerHTML += `<strong>Total: ${total.toFixed(2)} €</strong>`;
+            }
+        }
+
+        document.getElementById('seller-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Inscription réussie !');
+        });
+
+        document.getElementById('product-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const productName = document.getElementById('product-name').value;
+            const productPrice = document.getElementById('product-price').value;
+            const productImage = document.getElementById('product-image').value;
+
+            alert(`Produit ajouté: ${productName} au prix de ${productPrice} €`);
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
